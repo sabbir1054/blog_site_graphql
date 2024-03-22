@@ -11,7 +11,14 @@ type Query{
       email:String!,
       password:String!
     ):UserArgs
+
+    signin(
+      email:String!
+      password:String!
+    ):UserArgs
+
   }
+  
 
   type UserArgs{
     token:String
